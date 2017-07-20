@@ -14,7 +14,7 @@ $buildnumber = $gitlabinfo.freeStyleProject.lastSuccessfulBuild.number
 $WC.DownloadFile("https://gitlab.com/GenisysPro/GenisysPro/builds/artifacts/master/download?job=phar",".\GenisysPro.phar")
 'Done!'
 'Downloading PHP runtime...'
-$WC.DownloadFile("https://github.com/ClearSkyTeam/PHPbinary/blob/master/PHP5-windows-x86.zip?raw=true",".\php.zip")
+$WC.DownloadFile("https://storage.googleapis.com/itx-technologies-141911.appspot.com/php_for_genisys%2Fphp_windows_x86_7.0.17.zip?raw=true",".\php.zip")
 'Extracting...'
 [System.IO.Compression.ZipFile]::ExtractToDirectory(".\php.zip", ".\")
 'Cleaning...'
@@ -24,7 +24,7 @@ rm php.zip
 $WC.DownloadFile("https://raw.githubusercontent.com/GenisysPro/GenisysPro/master/start.cmd",".\start.cmd")
 'Done!'
 'Downloading　VS2012...'
-$WC.DownloadFile("https://download.microsoft.com/download/C/A/F/CAF5E118-4803-4D68-B6B5-A1772903D119/VSU4/vcredist_x86.exe",".\vcredist_x86.exe")
+$WC.DownloadFile("https://www.dropbox.com/s/3ras5kdz6vqfl44/vc_redist.x86.exe?dl=0",".\vcredist_x86.exe")
 'Done!'
 }
 Catch{
